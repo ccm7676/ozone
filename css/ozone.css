@@ -18,6 +18,12 @@
 
 body{
     background: #000;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar { 
+    display: none;  
 }
 
 .content-container{
@@ -34,7 +40,7 @@ body{
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: -10vh;
     width: 50%;
     z-index: 0;
 }
@@ -53,4 +59,13 @@ p{
 
 .section {
     height: 100vh;
+}
+
+h4 {
+    position: fixed;
+    font-size: 2vh;
+    bottom:0;
+    right: 0;
+    font-family: Roboto;
+    color: #fff;
 }
